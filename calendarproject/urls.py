@@ -20,5 +20,7 @@ import calendarapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', calendarapp.views.home, name="home"),
-    path('monthCalendar/', calendarapp.views.monthCalendar, name="monthCalendar"),
+    path('monthCal/2019/', calendarapp.views.monthCalendar, name="monthCalendar"),
+    path('monthCal/2018/', calendarapp.views.monthCalendar2018, name="monthCalendar2018"),
+    path('monthCal/2020/', calendarapp.views.monthCalendar2020, name="monthCalendar2020"),
 ]
